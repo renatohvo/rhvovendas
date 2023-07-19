@@ -1,0 +1,33 @@
+# RHVOVendas >> [rhvovendas.vercel.app](https://rhvovendas.vercel.app "https://rhvovendas.vercel.app")
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/renatohvo/rhvovendas/blob/main/LICENSE) 
+
+# ![Mobile 1](https://raw.githubusercontent.com/devsuperior/bds-assets/main/ds/devsuperior-logo-small.png) APP RHVOVendas - Spring React - [DevSuperior](https://devsuperior.com.br "https://devsuperior.com.br/")
+
+- API REST com Java e Spring Boot
+- Banco de Dados com ORM
+- Front-end com ReactJS
+- Camadas, componentes e boas práticas
+- Implantação na nuvem com CI/CD
+
+# Autor
+Renato Henrique Vasconcelos
+
+https://www.linkedin.com/in/renatohvo/
+
+# 
+<div display: inline-block>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="80" heigth="80" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" width="80" heigth="80" />
+    <img src="https://www.vectorlogo.zone/logos/hibernate/hibernate-icon.svg" alt="JPA/Hibernate" width="80" heigth="80" />
+    <img src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/63a4a33b35b50d243716d03b95a955e49db97662/icons/file_type_maven.svg" alt="Maven" width="80" heigth="80" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="80" heigth="80" />
+    <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman" width="80" height="80"/>
+</div>
+<div display: inline-block>
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="80" heigth="80" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/yarn/yarn-original.svg" width="80" heigth="80" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="80" heigth="80" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="80" heigth="80" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="80" heigth="80" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="80" heigth="80" />
+</div>
