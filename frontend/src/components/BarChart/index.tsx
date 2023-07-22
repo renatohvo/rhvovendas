@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/restrict-template-expressions */
+/* eslint-disable @typescript-eslint/no-floating-promises */
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 import Chart from 'react-apexcharts'
@@ -32,7 +34,6 @@ const BarChart = () => {
     })
 
     useEffect(() => {
-        // eslint-disable-next-line @typescript-eslint/no-floating-promises, @typescript-eslint/restrict-template-expressions
         axios.get(`${BASE_URL}/sales/success-by-seller`)
             .then(response => {
                 const data = response.data as SaleSuccess[]

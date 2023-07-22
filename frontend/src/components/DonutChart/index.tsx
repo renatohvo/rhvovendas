@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/restrict-template-expressions */
+/* eslint-disable @typescript-eslint/no-floating-promises */
 import axios from 'axios'
 import Chart from 'react-apexcharts'
 import { BASE_URL } from '../../utils/requests'
@@ -14,7 +16,6 @@ const DonutChart = () => {
     const [chartData, setChartData] = useState<ChartData>({ labels: [], series: [] })
 
     useEffect(() => {
-        // eslint-disable-next-line @typescript-eslint/no-floating-promises, @typescript-eslint/restrict-template-expressions
         axios.get(`${BASE_URL}/sales/amount-by-seller`)
             .then(response => {
                 const data = response.data as SaleSum[]
