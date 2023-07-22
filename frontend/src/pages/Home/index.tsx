@@ -9,7 +9,6 @@ const Home = () => {
             <div className="container">
                 <div className="jumbotron">
                     <br></br>
-                    <p className="lead">Em Construção.</p>
                     <h1 className="display-4">RHVO Vendas</h1>
                     <p className="lead">Analise o desempenho das suas vendas por diferentes perspectivas</p>
                     <hr />
