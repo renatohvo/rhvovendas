@@ -2,28 +2,29 @@ import axios from 'axios'
 import Chart from 'react-apexcharts'
 import { BASE_URL } from '../../utils/requests'
 import { SaleSum } from '../../types/sale'
+import { useEffect, useState } from 'react'
 
-type CharData = {
+type ChartData = {
     labels: string[]
     series: number[]
 }
 
 const DonutChart = () => {
 
-    // eslint-disable-next-line prefer-const
-    let chartData: CharData = { labels: [], series: [] }
+    const [chartData, setChartData] = useState<ChartData>({ labels: [], series: [] })
 
-    // eslint-disable-next-line @typescript-eslint/no-floating-promises, @typescript-eslint/restrict-template-expressions
-    axios.get(`${BASE_URL}/sales/amount-by-seller`)
-        .then(response => {
-            const data = response.data as SaleSum[]
-            const myLabels = data.map(x => x.sellerName)
-            const mySeries = data.map(x => x.sum)
+    useEffect(() => {
+        // eslint-disable-next-line @typescript-eslint/no-floating-promises, @typescript-eslint/restrict-template-expressions
+        axios.get(`${BASE_URL}/sales/amount-by-seller`)
+            .then(response => {
+                const data = response.data as SaleSum[]
+                const myLabels = data.map(x => x.sellerName)
+                const mySeries = data.map(x => x.sum)
 
-            chartData = { labels: myLabels, series: mySeries }
-            console.log(chartData)
-        });
-
+                setChartData({ labels: myLabels, series: mySeries })
+                console.log(chartData)
+            });
+    }, [])
 
     //const mockData = {
     //    series: [477138, 499928, 444867, 220426, 473088],
